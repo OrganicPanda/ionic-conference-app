@@ -6,7 +6,7 @@ import {AboutPage} from '../about/about';
 
 
 @Page({
-  templateUrl: 'build/pages/tabs/tabs.html'
+  template: require('./tabs.html')
 })
 export class TabsPage {
   static get parameters() {

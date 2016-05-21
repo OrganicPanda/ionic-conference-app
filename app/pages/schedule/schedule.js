@@ -6,7 +6,7 @@ import {SessionDetailPage} from '../session-detail/session-detail';
 
 
 @Page({
-  templateUrl: 'build/pages/schedule/schedule.html'
+  template: require('./schedule.html')
 })
 export class SchedulePage {
   static get parameters() {

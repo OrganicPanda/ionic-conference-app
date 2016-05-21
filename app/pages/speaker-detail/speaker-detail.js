@@ -3,7 +3,7 @@ import {SessionDetailPage} from '../session-detail/session-detail';
 
 
 @Page({
-  templateUrl: 'build/pages/speaker-detail/speaker-detail.html'
+  template: require('./speaker-detail.html')
 })
 export class SpeakerDetailPage {
   static get parameters() {

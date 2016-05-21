@@ -3,7 +3,7 @@ import {ConferenceData} from '../../providers/conference-data';
 
 
 @Page({
-  templateUrl: 'build/pages/map/map.html'
+  template: require('./map.html')
 })
 export class MapPage {
   static get parameters() {

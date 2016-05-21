@@ -5,7 +5,7 @@ import {SessionDetailPage} from '../session-detail/session-detail';
 
 
 @Page({
-  templateUrl: 'build/pages/speaker-list/speaker-list.html'
+  template: require('./speaker-list.html')
 })
 export class SpeakerListPage {
   static get parameters() {

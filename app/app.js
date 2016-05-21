@@ -8,9 +8,13 @@ import {LoginPage} from './pages/login/login';
 import {SignupPage} from './pages/signup/signup';
 import {TutorialPage} from './pages/tutorial/tutorial';
 
+// import { METEOR_PROVIDERS } from 'angular2-meteor';
+
+// console.log('METEOR_PROVIDERS', METEOR_PROVIDERS);
+
 
 @App({
-  templateUrl: 'build/app.html',
+  template: require('./app.html'),
   providers: [ConferenceData, UserData],
   // Set any config for your app here, see the docs for
   // more ways to configure your app:

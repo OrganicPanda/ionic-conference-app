@@ -2,7 +2,7 @@ import {Page, NavParams} from 'ionic-angular';
 
 
 @Page({
-  templateUrl: 'build/pages/session-detail/session-detail.html'
+  template: require('./session-detail.html')
 })
 export class SessionDetailPage {
   static get parameters() {

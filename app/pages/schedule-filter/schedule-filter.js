@@ -3,7 +3,7 @@ import {ConferenceData} from '../../providers/conference-data';
 
 
 @Page({
-  templateUrl: 'build/pages/schedule-filter/schedule-filter.html'
+  template: require('./schedule-filter.html')
 })
 export class ScheduleFilterPage {
   static get parameters() {

@@ -5,7 +5,7 @@ import {UserData} from '../../providers/user-data';
 
 
 @Page({
-  templateUrl: 'build/pages/login/login.html'
+  template: require('./login.html')
 })
 export class LoginPage {
   static get parameters() {
