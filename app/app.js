@@ -15,8 +15,8 @@ import { Meteor } from 'meteor/meteor';
 
 console.log('Meteor', Meteor);
 
-// import {bootstrap} from 'angular2-meteor-auto-bootstrap';
-// console.log('bootstrap', bootstrap);
+import {bootstrap} from 'angular2-meteor-auto-bootstrap';
+console.log('bootstrap', bootstrap);
 
 // import ejson from '../backend/.meteor/local/build/programs/web.browser/packages/ejson';
 

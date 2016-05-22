@@ -124,6 +124,19 @@ module.exports = {
     }, {
       test: /(ionicons|roboto|noto).*?\.(svg|ttf|woff|eot)/,
       loader: 'file?name=fonts/[name].[hash].[ext]'
+    }, {
+      test: /angular2-meteor/,
+
+      // angular2-meteor expects to be running inside Meteor so some globals
+      // need to be provided
+      loader: 'imports?' + [
+        'Tracker=>require(\'meteor/tracker\').Tracker',
+        'Meteor=>require(\'meteor/meteor\').Meteor',
+				'Mongo=>require(\'meteor/mongo\').Mongo',
+				'Tracker=>require(\'meteor/tracker\').Tracker',
+				'check=>require(\'meteor/check\').check',
+				'Match=>require(\'meteor/check\').Match'
+       ].join(',')
     }]
   },
   sassLoader: {
