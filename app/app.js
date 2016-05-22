@@ -8,11 +8,15 @@ import {LoginPage} from './pages/login/login';
 import {SignupPage} from './pages/signup/signup';
 import {TutorialPage} from './pages/tutorial/tutorial';
 
-// import { METEOR_PROVIDERS } from 'angular2-meteor';
 
-// console.log('METEOR_PROVIDERS', METEOR_PROVIDERS);
 
 import 'meteor-imports';
+import { Meteor } from 'meteor/meteor';
+
+console.log('Meteor', Meteor);
+
+// import {bootstrap} from 'angular2-meteor-auto-bootstrap';
+// console.log('bootstrap', bootstrap);
 
 // import ejson from '../backend/.meteor/local/build/programs/web.browser/packages/ejson';
 

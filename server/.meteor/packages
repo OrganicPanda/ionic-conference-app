@@ -9,4 +9,3 @@ mongo                   # The database Meteor supports right now
 reactive-var            # Reactive variable for tracker
 tracker                 # Meteor's client-side reactive programming library
 ecmascript              # Enable ECMAScript2015+ syntax in app code
-

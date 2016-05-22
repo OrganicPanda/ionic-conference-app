@@ -38,7 +38,7 @@ let basePlugins = [
 	  ROOT_URL: 'http://localhost:3000/',
 	  DDP_DEFAULT_CONNECTION_URL: 'http://localhost:3000/',
 	  PUBLIC_SETTINGS: {},
-	  meteorFolder: 'backend',
+	  meteorFolder: 'server',
 	  meteorEnv: { NODE_ENV: 'development' },
 	  exclude: ['ecmascript']
 	})
