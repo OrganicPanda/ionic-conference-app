@@ -4,7 +4,8 @@ let path = require('path')
   , webpack = require('webpack')
   , pkg = require('./package.json')
   , ExtractTextPlugin = require('extract-text-webpack-plugin')
-  , HtmlWebpackPlugin = require('html-webpack-plugin');
+  , HtmlWebpackPlugin = require('html-webpack-plugin')
+  , MeteorImportsPlugin = require('meteor-imports-webpack-plugin');
 
 let paths = {
   build: path.join(__dirname, 'www', 'build'),
@@ -32,7 +33,15 @@ let basePlugins = [
     template: path.join(paths.src, 'index.html'),
     inject: 'body'
   }),
-  new ExtractTextPlugin('[name].[hash].css')
+  new ExtractTextPlugin('[name].[hash].css'),
+  new MeteorImportsPlugin({
+	  ROOT_URL: 'http://localhost:3000/',
+	  DDP_DEFAULT_CONNECTION_URL: 'http://localhost:3000/',
+	  PUBLIC_SETTINGS: {},
+	  meteorFolder: 'backend',
+	  meteorEnv: { NODE_ENV: 'development' },
+	  exclude: ['ecmascript']
+	})
 ];
 
 let devPlugins = [
@@ -99,7 +108,10 @@ module.exports = {
       exclude: /node_modules/
     }, {
       test: /\.json$/,
-      loader: 'json'
+      loader: 'json',
+
+      // The Meteor loader uses json files and this interferes
+      exclude: /meteor/
     }, {
       test: /\.(png|jpg|svg)$/,
       loader: 'file?name=img/[name].[hash].[ext]'

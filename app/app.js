@@ -12,6 +12,11 @@ import {TutorialPage} from './pages/tutorial/tutorial';
 
 // console.log('METEOR_PROVIDERS', METEOR_PROVIDERS);
 
+import 'meteor-imports';
+
+// import ejson from '../backend/.meteor/local/build/programs/web.browser/packages/ejson';
+
+// console.log('ejson', ejson);
 
 @App({
   template: require('./app.html'),

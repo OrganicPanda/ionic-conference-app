@@ -47,6 +47,7 @@
     "ionic-gulp-sass-build": "^1.0.0",
     "ionic-gulp-scripts-copy": "^2.0.0",
     "json-loader": "^0.5.4",
+    "meteor-imports-webpack-plugin": "^1.0.4",
     "node-sass": "^3.7.0",
     "path": "^0.12.7",
     "run-sequence": "1.1.5",
@@ -54,7 +55,9 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-bundle-size-analyzer": "^2.0.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "exports-loader": "^0.6.3",
+    "imports-loader": "^0.6.5"
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
